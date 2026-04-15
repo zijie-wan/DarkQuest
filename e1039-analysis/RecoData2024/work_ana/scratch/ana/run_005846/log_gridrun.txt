@@ -1,0 +1,24 @@
+INPUT  = /seaquest/users/vsloken/displaced_rereco/e1039-analysis/RecoData2024/work_ana/scratch/ana/run_005846/in
+OUTPUT = /seaquest/users/vsloken/displaced_rereco/e1039-analysis/RecoData2024/work_ana/scratch/ana/run_005846/out
+HOST   = spinquestgpvm01.fnal.gov
+PWD    = /seaquest/users/vsloken/displaced_rereco/e1039-analysis/RecoData2024/work_ana/scratch/ana/run_005846/exe
+
+Processing Fun4All.C(5846, "/seaquest/users/vsloken/displaced_rereco/e1039-analysis/RecoData2024/work_ana/scratch/ana/run_005846/in", "/seaquest/users/vsloken/displaced_rereco/e1039-analysis/RecoData2024/work_ana/scratch/ana/run_005846/in/list_input.txt", 0)...
+In file included from input_line_8:1:
+/seaquest/users/vsloken/displaced_rereco/e1039-analysis/RecoData2024/work_ana/scratch/ana/run_005846/exe/Fun4All.C:2:1: fatal error: 'RecoData2024' file not found
+R__LOAD_LIBRARY(RecoData2024)
+^
+/exp/seaquest/app/software/osg/software/e1039/share/20250519/root/include/Rtypes.h:475:35: note: expanded from macro 'R__LOAD_LIBRARY'
+# define R__LOAD_LIBRARY(LIBRARY) _R_PragmaStr(cling load ( #LIBRARY ))
+                                  ^
+/exp/seaquest/app/software/osg/software/e1039/share/20250519/root/include/Rtypes.h:474:26: note: expanded from macro '_R_PragmaStr'
+# define _R_PragmaStr(x) _Pragma(#x)
+                         ^
+<scratch space>:4:30: note: expanded from here
+ cling load ( "RecoData2024" )
+                             ^
+
+real	0m20.438s
+user	0m0.200s
+sys	0m0.495s
+Error in Fun4All.C: 1

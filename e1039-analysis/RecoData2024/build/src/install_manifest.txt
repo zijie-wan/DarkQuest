@@ -1,0 +1,5 @@
+/seaquest/users/vsloken/displaced_rereco/e1039-analysis/RecoData2024/inst/lib/SRawEventDict_rdict.pcm
+/seaquest/users/vsloken/displaced_rereco/e1039-analysis/RecoData2024/inst/lib/libdataEval.so
+/seaquest/users/vsloken/displaced_rereco/e1039-analysis/RecoData2024/inst/include/GlobalConsts.h
+/seaquest/users/vsloken/displaced_rereco/e1039-analysis/RecoData2024/inst/include/SRawEvent.h
+/seaquest/users/vsloken/displaced_rereco/e1039-analysis/RecoData2024/inst/include/SRawEventLinkDef.h
