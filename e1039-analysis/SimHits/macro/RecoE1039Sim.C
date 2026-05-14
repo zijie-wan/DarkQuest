@@ -241,9 +241,8 @@ int RecoE1039Sim(const int nevents = 200,
     geom_svc->initWireLUT();
     //std::geom after  << std::endl;
 
-  geom_svc->printTable();
-  geom_svc->printWirePosition();//~update cout<< 
-
+    geom_svc->printTable();
+    geom_svc->printWirePosition();//~update cout<< 
 
     if (isDEBUG)
     {
