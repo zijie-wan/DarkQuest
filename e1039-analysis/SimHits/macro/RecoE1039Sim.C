@@ -221,6 +221,30 @@ int RecoE1039Sim(const int nevents = 200,
     // geometry information
     GeomSvc::UseDbSvc(true);
     GeomSvc *geom_svc = GeomSvc::instance();
+
+    geom_svc->printWirePosition();
+
+    // update the geometry for the DP1 hodoscopes --ZW(2025-Jan-21)
+    geom_svc->getPlanePtr(55)->cellWidth = 1.015;
+    geom_svc->getPlanePtr(56)->cellWidth = 1.015;
+    geom_svc->getPlanePtr(57)->cellWidth = 1.015;
+    geom_svc->getPlanePtr(58)->cellWidth = 1.015;
+    geom_svc->getPlanePtr(55)->spacing = 1.015;
+    geom_svc->getPlanePtr(56)->spacing = 1.015;
+    geom_svc->getPlanePtr(57)->spacing = 1.015;
+    geom_svc->getPlanePtr(58)->spacing = 1.015;
+    // update the xoffset to make sure the postion for the ch1 for each DP1 quadrant is unchanged when we change the spacing parameter.
+    geom_svc->getPlanePtr(55)->xoffset = -2.7479;
+    geom_svc->getPlanePtr(56)->xoffset = -3.3573;
+    geom_svc->getPlanePtr(57)->xoffset = 3.3576;
+    geom_svc->getPlanePtr(58)->xoffset = 2.6446;
+    geom_svc->initWireLUT();
+    //std::geom after  << std::endl;
+
+  geom_svc->printTable();
+  geom_svc->printWirePosition();//~update cout<< 
+
+
     if (isDEBUG)
     {
         std::cout << "print geometry information" << std::endl;
